@@ -1,0 +1,6 @@
+{
+  "name": "Brasa & Massa",
+  "description": "Cardápio digital completo com pedidos via WhatsApp para pizzaria e hamburgueria.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
