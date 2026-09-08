@@ -37,14 +37,6 @@ export default function App() {
     return <LoadingScreen />;
   }
 
-  if (currentPath !== '/' && currentPath !== '/index.html') {
-    return (
-      <CartProvider>
-        <NotFound />
-      </CartProvider>
-    );
-  }
-
   return (
     <CartProvider>
       <AnimatePresence>
