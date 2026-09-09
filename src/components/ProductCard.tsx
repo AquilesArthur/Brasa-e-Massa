@@ -16,21 +16,7 @@ export function ProductCard({ product }: ProductCardProps) {
   const { addItem } = useCart();
 
   const handleAdd = () => {
-    if (product.available_sizes || product.customizations) {
-      setIsModalOpen(true);
-    } else {
-      // Direct add to cart
-      addItem({
-        id: crypto.randomUUID(),
-        productId: product.id,
-        name: product.name,
-        basePrice: product.price,
-        finalPrice: product.price,
-        quantity: 1,
-        image: product.image,
-        extras: [],
-      });
-    }
+    setIsModalOpen(true);
   };
 
   return (
